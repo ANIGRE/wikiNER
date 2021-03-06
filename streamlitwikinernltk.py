@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/gist/ANIGRE/9a3678bcbce915303813deff6caced0b/streamlitwikinernltk.ipynb
 """
 
-pip install streamlit
+
 
 import streamlit as st 
 import os
@@ -16,7 +16,6 @@ from textblob import TextBlob
 import spacy
 from gensim.summarization import summarize
 
-pip install git+git://github.com/miso-belica/sumy.git
 
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
