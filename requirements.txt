@@ -3,3 +3,4 @@ sumy==0.8.1
 NLTK==3.5
 TextBlob==0.15.3
 spaCy==2.3
+gensim==3.8.3
