@@ -14,6 +14,7 @@ import os
 
 from textblob import TextBlob 
 import spacy
+import en_core_web_md
 from gensim.summarization import summarize
 
 
@@ -30,14 +31,14 @@ def sumy_summarizer(docx):
 	return result
 
 def text_analyzer(my_text):
-	nlp = spacy.load('en')
+	nlp = en_core_web_md.load()
 	docx = nlp(my_text)
 
 	allData = [('"Token":{},\n"Lemma":{}'.format(token.text,token.lemma_))for token in docx ]
 	return allData
 
 def entity_analyzer(my_text):
-	nlp = spacy.load('en')
+	nlp = en_core_web_md.load()
 	docx = nlp(my_text)
 	tokens = [ token.text for token in docx]
 	entities = [(entity.text,entity.label_)for entity in docx.ents]
