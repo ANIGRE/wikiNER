@@ -1,2 +1,2 @@
 # wikiNER
- https://demowikiapp.herokuapp.com/
+https://demowikiapp.herokuapp.com/
